@@ -1,0 +1,35 @@
+{
+  "name": "primos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "analyze": "cross-env ANALYZE=1 next build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-styled-components": "^1.5.1",
+    "bootstrap": "^4.1.1",
+    "cross-env": "^5.1.5",
+    "express": "^4.16.3",
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "^6.0.1",
+    "nprogress": "^0.2.0",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "reactstrap": "^6.0.1",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "package-size": "^2.1.0",
+    "webpack-bundle-analyzer": "^2.8.3"
+  }
+}
