@@ -4,7 +4,8 @@
   ],
   "plugins": [
     ["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ],
-		["inline-import", { "extensions": [".css"] } ]
+		["inline-import", { "extensions": [".css"] } ],
+		 "transform-flow-strip-types"
   ],
 	"ignore": []
 }

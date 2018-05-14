@@ -1,3 +1,6 @@
+// @flow
+
+import * as React from 'react'
 import Header from './header'
 import Meta from './meta'
 import Footer from './footer'
@@ -5,9 +8,15 @@ import Footer from './footer'
 //import bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
 //import nprogress from 'nprogress/nprogress.css'
 
-export default ({ children, title = 'This is the default title' }) => (
+type Props = {
+  children?: React.Node,
+  title?: string
+};
+
+export default ({ children, title = 'This is the default title' } : Props) => (
 	<div className="main">
 		<Meta title={ title }/>
+		
 		<Header />
 
 		<div className="page">

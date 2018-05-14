@@ -4,7 +4,7 @@ export default () => (
   	<header>
    		<Nav />
   	 	<style jsx>{`
-    		.header {
+    		header {
     			padding: 0;
     			margin-bottom: 5px;
     		}
