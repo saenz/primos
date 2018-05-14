@@ -18,15 +18,19 @@ const Index = (props) => (
   	</Page>
 )
 
-Index.getInitialProps = async function() {
-  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
-  const data = await res.json()
+Index.getInitialProps = async function({ req, query }) {
 
-  console.log(`Show data fetched. Count: ${data.length}`)
+	const isServer = !!req
+	console.log('getInitialProps called:', isServer ? 'server' : 'client')
 
-  return {
-    shows: data
-  }
+  	const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
+  	const data = await res.json()
+
+  	console.log(`Show data fetched. Count: ${data.length}`)
+
+  	return {
+    	shows: data
+  	}
 }
 
 export default Index
