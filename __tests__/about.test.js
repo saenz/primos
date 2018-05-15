@@ -16,6 +16,8 @@ describe('With Enzyme', () => {
   })
 })
 
+// this is throwing an error
+//
 // describe('With Snapshot Testing', () => {
 //   it('About shows "About"', () => {
 //     const component = renderer.create(<About location={ location } />)
