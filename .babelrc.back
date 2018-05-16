@@ -5,8 +5,8 @@
 		["inline-import", { "extensions": [".css"] } ],
 		"transform-flow-strip-types",
     ["transform-imports", {
-    	"reactstrap": {
-      	"transform": "reactstrap/lib/${member}",
+    	"redux-form": {
+      	"transform": "redux-form/lib/${member}",
         "preventFullImport": true
       }
     }]

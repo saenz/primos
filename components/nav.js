@@ -1,4 +1,4 @@
-import Link from './activelink'
+import Link from './activeLink'
 import classnames from 'classnames'
 
 export default class Nav extends React.Component {
