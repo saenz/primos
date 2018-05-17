@@ -1,7 +1,7 @@
 import Page from '../components/page'
 import Col from 'reactstrap/lib/Col';
 import Row from 'reactstrap/lib/Row';
-import 'isomorphic-unfetch'
+import fetch from 'isomorphic-unfetch'
 import ContactForm from '../components/contact-form'
 import { Values } from "redux-form-website-template"
 

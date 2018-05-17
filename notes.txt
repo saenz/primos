@@ -1,0 +1,11 @@
+form validation uncontrolled component:
+	https://medium.com/@everdimension/how-to-handle-forms-with-just-react-ac066c48bd4f
+
+icons
+------
+	https://icomoon.io/app/#/select
+	https://medium.com/@david.gilbertson/icons-as-react-components-de3e33cb8792
+	react-icons
+	font awesome icons
+
+form validation controlled.
