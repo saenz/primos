@@ -33,10 +33,9 @@ export default () => (
 			}
 		    .footer {
 		    	margin-top: 1rem;
-		    	background: #e2e2e2;
-			    box-shadow: 0 2px 7px 0 rgba(120, 137, 149, 0.25);
+		    	background: #fff;
 			    border-radius: 3px;
-	   		    padding: 2px;
+	   		    padding: 0;
 			    color: #000;
 			    border: #0077e2;
 			}

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const Icon = ({children, size, color, viewBox}) => {
+const IconBase = ({children, size, color, viewBox}) => {
 	return (
 		<svg className="icon" width="32" height="32" viewBox={viewBox}>
 			{children}
@@ -18,7 +18,7 @@ const Icon = ({children, size, color, viewBox}) => {
 	)	
 }
 
-Icon.propTypes = {
+IconBase.propTypes = {
 	size: PropTypes.oneOfType([
     	PropTypes.string,
     	PropTypes.number
@@ -27,10 +27,10 @@ Icon.propTypes = {
   	viewBox: PropTypes.string,
 };
 
-Icon.defaultProps = {
+IconBase.defaultProps = {
   size: 16,
   viewBox: "0 0 1024 1024",
   color: "currentColor"
 };
 
-export default Icon
+export default IconBase

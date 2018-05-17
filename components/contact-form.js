@@ -25,12 +25,23 @@ export default class Example extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleBlur = this.handleBlur.bind(this);
     this.onDismissAlert = this.onDismissAlert.bind(this);
   }
 
   onDismissAlert() {
     this.setState({ alertVisible: false });
   }
+
+  // handleBlur = (field) => (evt) => {
+  //   console.log('inside on blur for field=' + field)
+  // }
+
+	handleBlur(field) {
+		return function(evt) {
+			console.log('inside on blur for field=' + field)
+		}
+	}
 
   handleSubmit(event) {
     event.preventDefault();
@@ -88,7 +99,15 @@ export default class Example extends React.Component {
       <Form onSubmit={this.handleSubmit} noValidate className={displayErrors ? 'was-validated' : ''}>
         <FormGroup>
           <Label for="exampleEmail">Email</Label>
-          <Input type="email" name="email" value={this.state.email} placeholder="Your email..." onChange={this.handleChange} required/>
+          <Input 
+						type="email" 
+						name="email" 
+						value={this.state.email} 
+						placeholder="Your email..." 
+						onChange={this.handleChange} 
+						onBlur={this.handleBlur('email')} 
+						required
+					/>
           <FormFeedback><Notification /> A valid email address must be entered</FormFeedback>
         </FormGroup>
         <FormGroup>
@@ -96,6 +115,11 @@ export default class Example extends React.Component {
           <Input type="textarea" name="message" value={this.state.message} rows="5" placeholder="Your message..." onChange={this.handleChange} required/>
           <FormFeedback><Notification /> This field is required</FormFeedback>
         </FormGroup>
+
+<div className="custom-control custom-checkbox">
+  <input type="checkbox" className="custom-control-input" id="customCheck1" />
+  <label className="custom-control-label" htmlFor="customCheck1">Check this custom checkbox</label>
+</div>
 
         <Button value="Submit" disabled={!isEnabled}>Submit</Button>
 

@@ -9,3 +9,4 @@ icons
 	font awesome icons
 
 form validation controlled.
+	https://goshakkk.name/instant-form-fields-validation-react/
