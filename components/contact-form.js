@@ -93,7 +93,7 @@ export default class Example extends React.Component {
         </FormGroup>
         <FormGroup>
           <Label for="exampleText">Message</Label>
-          <Input type="textarea" name="message" value={this.state.message} placeholder="Your message..." onChange={this.handleChange} required/>
+          <Input type="textarea" name="message" value={this.state.message} rows="5" placeholder="Your message..." onChange={this.handleChange} required/>
           <FormFeedback><Notification /> This field is required</FormFeedback>
         </FormGroup>
 
