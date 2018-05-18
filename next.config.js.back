@@ -4,6 +4,14 @@ const { ANALYZE } = process.env
 const debug = process.env.NODE_ENV !== 'production'
 
 module.exports = {
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' },
+      '/about': { page: '/about' },
+      '/contact': { page: '/contact' },
+      '/login': { page: '/login' }
+    }
+  },
   assetPrefix: !debug ? '/primos/' : '',
   webpack: function (config) {
     if (ANALYZE) {

@@ -41,7 +41,7 @@ export default class Header extends React.Component {
 				      		</li>
 				      		<li className="nav-item">
 				        		<Link href="/login" as={process.env.BACKEND_URL + '/login'} activeClassName='active'>
-				        			<a className="nav-link">Disabled</a>
+				        			<a className="nav-link">Login</a>
 				        		</Link>
 				      		</li>
 				    	</ul>
