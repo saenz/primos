@@ -1,8 +1,10 @@
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const { ANALYZE } = process.env
 
+const debug = process.env.NODE_ENV !== 'production'
+
 module.exports = {
-	exportPathMap: function(defaultPathMap) {
+  exportPathMap: function () {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
@@ -10,6 +12,7 @@ module.exports = {
       '/login': { page: '/login' }
     }
   },
+  assetPrefix: !debug ? '/primos/' : '',
   webpack: function (config) {
     if (ANALYZE) {
       config.plugins.push(new BundleAnalyzerPlugin({

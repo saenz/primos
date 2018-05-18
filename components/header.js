@@ -30,17 +30,17 @@ export default class Header extends React.Component {
 				  	<div className={collapseClasses} id="navbarSupportedContent">
 				    	<ul className="navbar-nav mr-auto">
 				      		<li className="nav-item">
-				        		<Link href="/about" activeClassName='active'>
+				        		<Link href="/about" as={process.env.BACKEND_URL + '/'} activeClassName='active'>
 				        			<a className="nav-link">About</a>
 				        		</Link>
 				      		</li>
 				      		<li className="nav-item">
-				        		<Link href="/contact" activeClassName='active'>
+				        		<Link href="/contact" as={process.env.BACKEND_URL + '/'} activeClassName='active'>
 				        			<a className="nav-link">Contact</a>
 				        		</Link>
 				      		</li>
 				      		<li className="nav-item">
-				        		<Link href="/login" activeClassName='active'>
+				        		<Link href="/login" as={process.env.BACKEND_URL + '/'} activeClassName='active'>
 				        			<a className="nav-link">Disabled</a>
 				        		</Link>
 				      		</li>
