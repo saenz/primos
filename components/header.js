@@ -22,7 +22,7 @@ export default class Header extends React.Component {
         return (
       		<div>
 	            <nav className="navbar navbar-expand-md navbar-light bg-light">
-					<Link href="/"><a className="navbar-brand">PRIMOS</a></Link>
+					<Link href="/" as={process.env.BACKEND_URL + '/'}><a className="navbar-brand">PRIMOS</a></Link>
 				  	<button className="navbar-toggler" type="button" onClick={this.toggle} aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    	<span className="navbar-toggler-icon"></span>
 				  	</button>
@@ -30,17 +30,17 @@ export default class Header extends React.Component {
 				  	<div className={collapseClasses} id="navbarSupportedContent">
 				    	<ul className="navbar-nav mr-auto">
 				      		<li className="nav-item">
-				        		<Link href="/about" as={process.env.BACKEND_URL + '/'} activeClassName='active'>
+				        		<Link href="/about" as={process.env.BACKEND_URL + '/about'} activeClassName='active'>
 				        			<a className="nav-link">About</a>
 				        		</Link>
 				      		</li>
 				      		<li className="nav-item">
-				        		<Link href="/contact" as={process.env.BACKEND_URL + '/'} activeClassName='active'>
+				        		<Link href="/contact" as={process.env.BACKEND_URL + '/contact'} activeClassName='active'>
 				        			<a className="nav-link">Contact</a>
 				        		</Link>
 				      		</li>
 				      		<li className="nav-item">
-				        		<Link href="/login" as={process.env.BACKEND_URL + '/'} activeClassName='active'>
+				        		<Link href="/login" as={process.env.BACKEND_URL + '/login'} activeClassName='active'>
 				        			<a className="nav-link">Disabled</a>
 				        		</Link>
 				      		</li>
