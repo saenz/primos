@@ -14,7 +14,7 @@ type Props = {
 };
 
 export default ({ children, title = 'This is the default title' } : Props) => (
-	<div className="container">
+	<div className="container" style={{padding:0}}>
 		<Meta title={ title }/>
 
 		<div className="wrapper">
@@ -27,7 +27,7 @@ export default ({ children, title = 'This is the default title' } : Props) => (
 		  	<aside className="aside aside-1">
 		  		Aside 1
 		  	</aside>
-		  	<aside className="aside aside-2">
+		  	<aside className="aside aside-2 border-left">
 		  		Aside 2
 		  	</aside>
 		  	<footer className="footer">
@@ -75,7 +75,7 @@ export default ({ children, title = 'This is the default title' } : Props) => (
 			}
 
 			.aside-2 {
-			  	background: #efefef;
+			  	background: #fff;
 				padding: 10px;
 			  	flex: 1 100%;
 			}
@@ -90,10 +90,6 @@ export default ({ children, title = 'This is the default title' } : Props) => (
 			  	.main    { order: 2; }
 			  	.aside-2 { order: 3; }
 			  	.footer  { order: 4; }
-			}
-
-			body {
-			  	padding: 2em; 
 			}
 		`}</style>	
 
