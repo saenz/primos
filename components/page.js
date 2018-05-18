@@ -30,6 +30,7 @@ export default ({ children, title = 'This is the default title' } : Props) => (
 		  	<aside className="aside aside-2 border-left">
 		  		Aside 2
 		  	</aside>
+
 		  	<footer className="footer">
 		  		<Footer />
 		  	</footer>
@@ -56,8 +57,8 @@ export default ({ children, title = 'This is the default title' } : Props) => (
 			}
 
 			.footer {
-			  	background: #c2c2c2;
-			  	padding: 10px;
+				border-top: 1px solid #ededed;
+			    padding: 48px 0;
 			  	flex: 1 100%;
 			}
 
