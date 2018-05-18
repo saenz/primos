@@ -11,7 +11,7 @@
     "flow": "flow",
     "start": "NODE_ENV=production node server.js",
     "analyze": "cross-env ANALYZE=1 next build",
-    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to primos\" && git subtree push --prefix out origin primos"
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to primos\" && git subtree push --prefix out origin gh-pages"
   },
   "keywords": [],
   "author": "",
