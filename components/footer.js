@@ -5,7 +5,7 @@ import Instagram from './icons/instagram'
 const ICON_SIZE = 24
 
 export default () => (	    
-    <footer className="footer">
+    <div>
     	<ul className="social-icon-list">
     		<li><Twitter size={ICON_SIZE} color="#9e9e9e" /></li>
       		<li><Facebook size={ICON_SIZE} color="#9e9e9e" /></li>
@@ -40,5 +40,5 @@ export default () => (
 			    border: #0077e2;
 			}
 	    `}</style>
-    </footer>
+	</div>
 )
