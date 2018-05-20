@@ -1,20 +1,12 @@
-import  {PropTypes} from 'prop-types'
+import { PropTypes } from 'prop-types'
 
 const Icon = props => {
-  const styles = {
-    svg: {
-      display: 'inline-block',
-      verticalAlign: 'middle',
-      fill: props.color
-    },
-    path: {
-      fill: props.color,
-    },
-  };
-
-  const icon = props.icon.format === 'data'
-    ? <path d={props.icon.path} />
-    : props.icon.markup;
+  const icon =
+    props.icon.format === 'data' ? (
+      <path d={props.icon.path} />
+    ) : (
+      props.icon.markup
+    )
 
   return (
     <svg
@@ -25,7 +17,6 @@ const Icon = props => {
       <title>{props.icon.title}</title>
       {icon}
       }
-
       <style jsx>{`
         svg {
           display: inline-block;
@@ -35,17 +26,17 @@ const Icon = props => {
         }
       `}</style>
     </svg>
-  );
-};
+  )
+}
 
 Icon.propTypes = {
   icon: PropTypes.object.isRequired,
   size: PropTypes.number,
-  color: PropTypes.string,
-};
+  color: PropTypes.string
+}
 
 Icon.defaultProps = {
-  size: 16,
-};
+  size: 16
+}
 
-export default Icon;
+export default Icon

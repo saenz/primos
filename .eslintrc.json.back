@@ -15,7 +15,9 @@
         "node":    true,
         "jest":   true
     },   
-    "extends": ["airbnb"],
+    "extends": [
+			"airbnb"
+		],
     "rules": {
 			"react/jsx-filename-extension": [
       	"error",
@@ -26,6 +28,9 @@
 			"react/react-in-jsx-scope": "off",
 			"semi": [1, "never"],
 			"react/jsx-closing-tag-location": 0,
-  		"react/jsx-curly-brace-presence": 0
+  		"react/jsx-curly-brace-presence": 0,
+			"react/prop-types" : 0,
+  		"object-curly-newline": 0,
+			"no-console": 0
     }
 }

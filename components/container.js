@@ -1,6 +1,6 @@
 
 export default props => (
-    <div className="container-fluid">
-        {props.children}
-    </div>
-);
+  <div className='container-fluid'>
+    {props.children}
+  </div>
+)

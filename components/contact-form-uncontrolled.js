@@ -1,7 +1,7 @@
-import { Button, Form, FormGroup, Label, Input, FormText, FormFeedback } from 'reactstrap'
+import { Button, Form, FormGroup, Label, Input, FormFeedback } from 'reactstrap'
 import Notification from './icons/notification'
 
-function stringifyFormData(fd) {
+function stringifyFormData (fd) {
   const data = {};
   for (let key of fd.keys()) {
     data[key] = fd.get(key);
@@ -11,7 +11,7 @@ function stringifyFormData(fd) {
 
 export default class Example extends React.Component {
 
-  constructor(props) {
+  constructor (props) {
     super(props);
 
     this.state = {
