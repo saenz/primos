@@ -7,8 +7,8 @@
     "test": "NODE_ENV=test jest",
     "dev": "node ./server/server.js",
     "build": "next build",
-    "lint": "eslint '**/*.js'",
-    "precommitx": "lint-staged",
+    "lint": "eslint 'components/**/*.js' '__tests__/**/*.js' 'types/**/*.js' 'lib/**/*.js' 'pages/**/*.js' 'constants/*.js' 'server/**/*.js' 'store/**/*.js'",
+    "precommit": "lint-staged",
     "export": "next export",
     "flow": "flow",
     "start": "NODE_ENV=production node ./server/server.js",
@@ -80,10 +80,10 @@
     "react-test-renderer": "^16.3.2",
     "webpack-bundle-analyzer": "^2.8.3"
   },
-  "xlint-staged": {
+  /*"lint-staged": {
     "*.js": [
       "lint --fix",
       "git add"
     ]
-  }
+  }*/
 }

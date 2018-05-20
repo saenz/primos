@@ -1,3 +1,5 @@
+import { PropTypes } from 'prop-types'
+
 const Button = props => (
   <button {...props}>
     {props.children}
@@ -11,5 +13,9 @@ const Button = props => (
       border: #0077e2;
     `}</style>
   </button>
-);
-export default Button;
+)
+export default Button
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+}
