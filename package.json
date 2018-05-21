@@ -7,7 +7,7 @@
     "test": "NODE_ENV=test jest",
     "dev": "node ./server/server.js",
     "build": "next build",
-    "lint": "eslint '**/*.js'",
+    "lint": "standard 'components/**/*.js' 'lib/**/*.js' 'pages/**/*.js' 'server/**/*.js' '/**/*.js' '__test__/**/*.js'",
     "precommitx": "lint-staged",
     "export": "next export",
     "flow": "flow",
@@ -93,11 +93,8 @@
       "flowtype"
     ]
   },
-  "xlint-staged": {
-    "*.js": [
-      "lint --fix",
-      "git add"
-    ]
+  "lint-staged": {
+    "*.js": "standard"
   },
   "eslintIgnore": [
     "next.config.js",

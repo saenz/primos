@@ -1,4 +1,4 @@
-import Link from './activeLink'
+import Link from './activelink'
 import classnames from 'classnames'
 import Search from './icons/search'
 
