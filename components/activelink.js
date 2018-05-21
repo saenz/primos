@@ -13,7 +13,7 @@ const ActiveLink = ({ router, children, activeClassName, ...props }) => {
     } ${activeClassName}`.trim()
   }
 
-  // delete props.activeClassName
+  //delete props.activeClassName
 
   return <Link {...props}>{React.cloneElement(child, { className })}</Link>
 }

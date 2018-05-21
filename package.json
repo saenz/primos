@@ -8,7 +8,7 @@
     "dev": "node ./server/server.js",
     "build": "next build",
     "lint": "standard 'components/**/*.js' 'lib/**/*.js' 'pages/**/*.js' 'server/**/*.js' '*.js' '__test__/**/*.js'",
-    "precommitx": "lint-staged",
+    "precommit": "lint-staged",
     "export": "next export",
     "flow": "flow",
     "start": "NODE_ENV=production node ./server/server.js",
