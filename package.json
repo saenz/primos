@@ -7,7 +7,7 @@
     "test": "NODE_ENV=test jest",
     "dev": "node ./server/server.js",
     "build": "next build",
-    "lint": "standard 'components/**/*.js' 'lib/**/*.js' 'pages/**/*.js' 'server/**/*.js' '/**/*.js' '__test__/**/*.js'",
+    "lint": "standard 'components/**/*.js' 'lib/**/*.js' 'pages/**/*.js' 'server/**/*.js' '*.js' '__test__/**/*.js'",
     "precommitx": "lint-staged",
     "export": "next export",
     "flow": "flow",
@@ -91,7 +91,8 @@
     "parser": "babel-eslint",
     "plugins": [
       "flowtype"
-    ]
+    ],
+    "globals": [ "alert", "FormData" ]
   },
   "lint-staged": {
     "*.js": "standard"

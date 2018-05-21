@@ -5,9 +5,9 @@ import Twitter from './twitter'
 import YouTube from './youtube'
 
 export {
-	Facebook,
-	Instagram,
-	Notification,
-	Twitter,
-	YouTube
+  Facebook,
+  Instagram,
+  Notification,
+  Twitter,
+  YouTube
 }
